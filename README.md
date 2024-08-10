@@ -1,2 +1,2 @@
 # Character-Archive
-A website that allows and helps a write to keep track of all there characters and alos share them with other creaters
+A web app that helps writers develop and keep track of all their characters, and also share them with other creators
