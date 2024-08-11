@@ -1,4 +1,3 @@
-{{#if loggedIn}}
 <section class="painting">
   <img src="/images/{{painting.filename}}" alt="{{painting.description}}">
   <div class="painting-details">
@@ -7,6 +6,3 @@
     <p>Exhibition open until: {{ format_date painting.exhibition_date}}</p>
   </div>
 </section>
-{{else}}
-<a href="/login">You must login first to view this page</a>
-{{/if}}
