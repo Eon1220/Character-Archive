@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Hiro Easton",
+    "desc": "God of Combat, Expert in all forms of hand to hand.One of the Easton Triplets",
+    "user_id": 1
+  },
+  {
+    "name": "Atlas Easton",
+    "desc": "God of Swordsmen, Expert in all forms of weaponry.One of the Easton Triplets",
+    "user_id": 2
+  },
+  {
+    "name": "Orchid Easton",
+    "desc": "Goddess of Assassins, Expert in all forms of firearms and artilery.One of the Easton Triplets",
+    "user_id": 3
+  }
+]
