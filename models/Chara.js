@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Gallery extends Model {}
+class Chara extends Model {}
 
-Gallery.init(
+Chara.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,25 +11,34 @@ Gallery.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    starting_date: {
-      type: DataTypes.DATE,
+    body: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
-    ending_date: {
+    date_created: {
       type: DataTypes.DATE,
       allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
   },
   {
     sequelize,
+    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'gallery',
+    modelName: 'chara',
   }
 );
 
-module.exports = Gallery;
+module.exports = Chara;
