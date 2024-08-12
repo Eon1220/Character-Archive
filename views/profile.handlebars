@@ -11,7 +11,7 @@
     <form class="form new-chara-form">
       <div class="form-group">
         <label for="chara-name">Character name:</label>
-        <input class="form-input" type="text" id="chara-title" name="chara-title" />
+        <input class="form-input" type="text" id="chara-name" name="chara-name" />
       </div>
       <div class="form-group">
         <label for="chara-desc">Character description:</label>
@@ -25,12 +25,12 @@
 
   {{#if charas.length}}
   <div class="col-md-6 chara-list">
-    <h3>Current Posts:</h3>
+    <h3>Current Characters:</h3>
 
     {{#each charas as |chara|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/chara/{{chara.id}}">{{chara.title}}</a></h4>
+        <h4><a href="/chara/{{chara.id}}">{{chara.name}}</a></h4>
       </div>
       <div class="col-md-2">
         <button class="btn btn-sm btn-danger" data-id="{{chara.id}}">EDIT</button>
