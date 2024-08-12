@@ -20,10 +20,5 @@
         "express-session": "^1.18.0",
         "pg": "^8.12.0",
         "sequelize": "^6.37.3"
-    },
-    "devDependencies": {
-        "eslint": "^7.12.1",
-        "eslint-config-prettier": "^6.15.0",
-        "prettier": "^2.1.2"
     }
 }
