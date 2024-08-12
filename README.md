@@ -5,6 +5,7 @@ A web app that helps writers develop and keep track of all their characters, and
 
 ## Table of contents
 - [Instilations](#instilations)
+- [Screenshots](#screenshots)
 - [Usage](#usage)
 - [Credits](#credit/colabirators)
 
@@ -17,6 +18,12 @@ A web app that helps writers develop and keep track of all their characters, and
 - express-session 
 - postgres 
 - sequelize 
+
+## Screenshots
+![Homepage](<public/images/Screenshot 2024-08-12 141150.png>)
+![Login page](<public/images/Screenshot 2024-08-12 141228.png>)
+![Account page](<public/images/Screenshot 2024-08-12 141253.png>)
+
 
 
 ## Usage
