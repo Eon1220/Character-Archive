@@ -1,37 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eververse</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-</head>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Eververse</title>
+    <link rel='stylesheet' href='/css/jass.css' />
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
 
-<body>
-  <header>
-    <h1>Eververse</h1>
-  </header>
-  <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Where your ideas can become reality</h2>
-    </aside>
-    <div class="gallery">
-      {{{body}}}
+  <body>
+    <div class='flex-column justify-space-around'>
+      <header class='display-flex justify-space-between align-center p-2'>
+        <h1>
+          <a href='/'>Tech Blog</a>
+        </h1>
+        <nav>
+          <ul>
+            {{#if logged_in}}
+              <li><a href='/'>Homepage</a></li>
+              <li><a href='/profile'>profile</a></li>
+              <li><a class='no-button' id='logout'>logout</a></li>
+            {{else}}
+              <li><a href='/login'>Homepage</a></li>
+              <li><a href='/login'>Profile</a></li>
+              <li><a href='/login'>Login</a></li>
+            {{/if}}
+          </ul>
+        </nav>
+      </header>
+      <main class='container container-fluid mt-5'>
+        {{{body}}}
+      </main>
     </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+
+    {{#if logged_in}}
+      <script src='/js/logout.js'></script>
+    {{/if}}
+  </body>
 
 </html>
