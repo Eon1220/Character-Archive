@@ -4,14 +4,8 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    const charaData = await Chara.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
+    const charaData = await Chara.findAll();
+    
     const charas = charaData.map((chara) => chara.get({ plain: true }));
     res.render('homepage', {
       charas,

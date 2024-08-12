@@ -11,11 +11,11 @@ Chara.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    body: {
+    desc: {
       type: DataTypes.STRING,
       allowNull: false,
     },
